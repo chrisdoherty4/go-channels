@@ -34,7 +34,7 @@ func multiply(input <-chan int, multiplier int) <-chan int {
 
 func main() {
 	input := make(chan int)
-	output := multiply(add(add(input, 1), 2), 4)
+	output := add(add(add(input, 1), 2), 4)
 
 	input <- 1
 	fmt.Println(<-output)

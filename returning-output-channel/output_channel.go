@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 /*
-func foo() <-chan int {
+func foo(input <-chan int) <-chan int {
 	output := make(chan int)
 
 	go func() {
